@@ -1,0 +1,127 @@
+\documentclass[12pt,a4paper]{amsart}
+%\usepackage{amsfonts}
+%\usepackage{amsthm}
+%\usepackage{amsmath}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{mathbbol}
+\usepackage[latin2]{inputenc}
+\usepackage{t1enc}
+%\usepackage[mathscr]{eucal}
+%\usepackage{indentfirst}
+%\usepackage{graphicx}
+%\usepackage{graphics}
+%\usepackage{pict2e}
+%\usepackage{epic}
+%\numberwithin{equation}{section}
+\usepackage[margin=2.9cm]{geometry}
+%\usepackage{epstopdf} 
+
+ %\def\numset#1{{\\mathbb #1}}
+
+ 
+
+\theoremstyle{plain}
+\newtheorem{Th}{Theorem}[section]
+\newtheorem{Lemma}[Th]{Lemma}
+\newtheorem{Cor}[Th]{Corollary}
+\newtheorem{Prop}[Th]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{Def}[Th]{Definition}
+\newtheorem{Conj}[Th]{Conjecture}
+\newtheorem{Rem}[Th]{Remark}
+\newtheorem{?}[Th]{Problem}
+\newtheorem{Ex}[Th]{Example}
+
+
+
+\begin{document}
+
+\title{Unusual proofs of some elemental inequalities}
+
+
+\author{Jimin Shi}
+
+\address{Shanxi Normail University \\ Department of Mathematics \\
+\\ Linfen, Shanxi 041000 \\ P. R. China} 
+
+\email{jimin.shi@foxmail.com}
+
+
+% \subjclass[2010]{Primary: 05C??. Secondary: 05C??}
+
+
+
+% \keywords{sample paper} 
+
+
+
+\begin{abstract} This paper provides the unusual proofs of some elemental inequalities, including the basic one, H\"older's, Jensen's and so on, and shows the use of Bernoulli's and Calculus method.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction} 
+This article intends to start from a comparative perspective and use analysis tools to give different kinds of proofs to elementary inequalities for reference.
+
+The vector in the article, if not specifically stated, always assumes that its components are all positive numbers and are represented in bold letters. And the bold letter function represents such a vector: Its components are calculated according to the algorithm indicated by the function formula. E.g.: 
+
+$\mathbb{a}=\left( \begin{array}{c} a_1 \\ \vdots \\ a_n \end{array} \right)$, 
+$\mathbb{a} + \mathbb{b} = \left( \begin{array}{c} a_1 + b_1 \\ \vdots \\ a_n + b_n \end{array} \right)$,
+$\mathbb{a} \cdot \mathbb{b} = \left( \begin{array}{c} a_1 b_1 \\ \vdots \\ a_n b_n \end{array} \right)$, 
+$\mathbb{a}^{\alpha} \mathbb{b}^{1-\alpha} = \left( \begin{array}{c} a_1^{\alpha} b_1^{1-\alpha} \\ \vdots \\ a_n^{\alpha} b_n^{1-\alpha} \end{array} \right)$, 
+$f(a)=\left( \begin{array}{c} f(a_1) \\ \vdots \\ f(a_n) \end{array} \right)$, etc. 
+
+The frequently used symbols are:
+
+$|\mathbb{a}| = |\mathbb{a}|_1 \triangleq \sum{a_i}$, $|\mathbb{c}\cdot \mathbb{a}^r|^{\frac{1}{r}}  \triangleq \left( \sum{c_i a_i^r}\right)^{\frac{1}{r}}$
+
+
+
+\begin{Th} \label{main} 
+
+If $a_i$, $b_i$  (i = 1, $\ldots$, n) are positive, then
+
+\[
+\sum a^{\alpha}_{i} b^{1-\alpha}_{i} 
+                \begin{array}{ll}
+                  \leqslant  \\
+                  > 
+                \end{array}
+\]
+
+
+\end{Th}
+
+\section{Proof of Theorem~\ref{main}}
+
+In this section we present the proof of Theorem~\ref{main}.
+
+\begin{proof} We leave the proof of the first statement to the Reader. Now we prove the second statement. The main advantage of latex is that it is much easier to create mathematical formulas and they look much better than in Microsoft Word.
+For instance,
+$$\frac{x^2+1}{\sqrt{u+v}}\in \mathbb{R}.$$
+On the other, you can do everything which can be done with Microsoft Word. You can put pictures in it, but generally you can only indicate its place, the actual place of the figure depends on many things. For instance, in the latex file there is a picture following this sentence, but since there is no place here, the program will take it to the next page, and some texts precede it. If you have problem with some figure, don't hesitate to ask me.
+
+\begin{figure}[h!]
+%\scalebox{.45}{\includegraphics{hexagonal_lattice.eps}}  
+\end{figure}
+
+From time to time, you will need some commands. Practically, I use at most 20 commands regularly, and sometimes I need tricky command which I find on the internet. I emphasize again that if you have any question, feel free to ask me.
+
+\end{proof}
+
+\begin{thebibliography}{99} 
+
+\bibitem{wilk} David R. Wilkins: \textit{Getting started with Latex}, \begin{verbatim} http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/
+\end{verbatim}
+
+\bibitem{wiki} \begin{verbatim} http://en.wikibooks.org/wiki/LaTeX \end{verbatim}
+
+
+
+\end{thebibliography}
+
+
+
+\end{document}
