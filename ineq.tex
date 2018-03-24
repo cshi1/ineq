@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{amsart}
+\documentclass[12pt,a4paper,reqno]{amsart}
 %\usepackage{amsfonts}
 %\usepackage{amsthm}
 %\usepackage{amsmath}
@@ -22,7 +22,8 @@
  
 
 \theoremstyle{plain}
-\newtheorem{Th}{Theorem}[section]
+% \newtheorem{Th}{Theorem}[section]
+\newtheorem{Th}{Theorem}
 \newtheorem{Lemma}[Th]{Lemma}
 \newtheorem{Cor}[Th]{Corollary}
 \newtheorem{Prop}[Th]{Proposition}
@@ -84,12 +85,14 @@ when $c_i > 0 ~\& \sum{c_i} = 1$, $|\mathbb{c}\cdot \mathbb{a}^r|^{\frac{1}{r}}\
 
 \section{Basic inequality}
 
-Inequalities that occupy a special important position in inequality systems $A\geqslant G$, There is no lack of exquisite proofs~\cite{shi1964}. 
-
-
+Inequalities that occupy a special important position in inequality systems $A\geqslant G$, There is no lack of exquisite proofs~\cite{shi1964}. The analysis presented here proves that it is worth learning from the paradigm of the application of analytical methods. 
 
 
 \begin{Th} \label{main} 
+
+\begin{equation}
+  \frac{a_1 + \cdots +a_n}{n} \triangleq A \geqslant G \triangleq \geqslant (a_1 \cdots a_n)^{\frac{1}{n}}
+\end{equation}
 
 If $a_i$, $b_i$  (i = 1, $\ldots$, n) are positive, then
 
