@@ -88,40 +88,36 @@ when $c_i > 0 ~\& \sum{c_i} = 1$, $|\mathbb{c}\cdot \mathbb{a}^r|^{\frac{1}{r}}\
 Inequalities that occupy a special important position in inequality systems $A\geqslant G$, There is no lack of exquisite proofs~\cite{shi1964}. The analysis presented here proves that it is worth learning from the paradigm of the application of analytical methods. 
 
 
-\begin{Th} \label{main} 
+\begin{Th} \label{th1} 
 
 \begin{equation}
   \frac{a_1 + \cdots +a_n}{n} \triangleq A \geqslant G \triangleq \geqslant (a_1 \cdots a_n)^{\frac{1}{n}}
 \end{equation}
 
-If $a_i$, $b_i$  (i = 1, $\ldots$, n) are positive, then
-
-\[
-\sum a^{\alpha}_{i} b^{1-\alpha}_{i} 
-                \begin{array}{ll}
-                  \leqslant  \\
-                  > 
-                \end{array}
-\]
-
-
 \end{Th}
 
-\section{Proof of Theorem~\ref{main}}
+\begin{proof} First, from $(a_1 - a_2)^2$ one can see Eq.(\ref{th1}) is established when $n=2$. 
+  Then, let Eq.(\ref{th1}) true when $n=k$, proof true when $n=k+1$. 
+  
+  Note  
+  $$A_k = \frac{a_1+\cdots+a_k}{k}, G_k = (a_1\cdots a_k)^{\frac{1}{k}}$$ 
+  $$A_{k+1} = \frac{a_1+\cdots+a_k+x}{k+1} = \frac{kA_k+x}{k+1}$$ 
+  $$ G_{k+1}=(a_1\cdots a_k\cdot x)^{\frac{1}{k+1}} = (G_k^k \cdot x)^{\frac{1}{k+1}}$$
+  where x is any positive number. 
 
-In this section we present the proof of Theorem~\ref{main}.
+Let  $$f(x)\triangleq \ln \frac{G_{k+1}}{A_{k+1}} $$
+then $$f^{\prime}(x)=\frac{1}{k+1}\cdot\frac{1}{x} - \frac{1}{k\cdot A_k+x}$$
+$$ f^{\prime\prime}(x) = \frac{-1}{(k+1)\cdot x^2} + \frac{1}{(k\cdot+x)^2} $$
+and  $f^{\prime}(x) = 0 $ root $x_0 = A_k$. 
 
-\begin{proof} We leave the proof of the first statement to the Reader. Now we prove the second statement. The main advantage of latex is that it is much easier to create mathematical formulas and they look much better than in Microsoft Word.
-For instance,
-$$\frac{x^2+1}{\sqrt{u+v}}\in \mathbb{R}.$$
-On the other, you can do everything which can be done with Microsoft Word. You can put pictures in it, but generally you can only indicate its place, the actual place of the figure depends on many things. For instance, in the latex file there is a picture following this sentence, but since there is no place here, the program will take it to the next page, and some texts precede it. If you have problem with some figure, don't hesitate to ask me.
+Because $$ f^{\prime\prime}(x_0) = \frac{1-(k+1)}{(k+1)^2\cdot A_k} < 0 $$
+Then one know this function defined on $(0, \infty)$ with better smoothness (i.e. has no singularity other than stationary point $x_0$ reaches the maximum at $x_0$ (upward convex). which is: 
 
-\begin{figure}[h!]
-%\scalebox{.45}{\includegraphics{hexagonal_lattice.eps}}  
-\end{figure}
+$$
+\max[x\in (0, \infty)] f(x) = f(x_0) = \frac{k}{k+1}\cdot \ln \frac{G_k}{A_k} \leqslant 0. 
+$$
 
-From time to time, you will need some commands. Practically, I use at most 20 commands regularly, and sometimes I need tricky command which I find on the internet. I emphasize again that if you have any question, feel free to ask me.
-
+where the $\leqslant$ used introduction hypothesis, that is $A_{k+1} \leqslant G_{k+1}$. 
 \end{proof}
 
 \begin{thebibliography}{99} 
