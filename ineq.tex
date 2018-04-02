@@ -96,8 +96,8 @@ Inequalities that occupy a special important position in inequality systems $A\g
 
 \end{Th}
 
-\begin{proof} First, from $(a_1 - a_2)^2$ one can see Eq.(\ref{th1}) is established when $n=2$. 
-  Then, let Eq.(\ref{th1}) true when $n=k$, proof true when $n=k+1$. 
+\begin{proof} First, from $(a_1 - a_2)^2$ one can see Eq.\eqref{th1} is established when $n=2$. 
+  Then, let Eq.\eqref{th1} true when $n=k$, proof true when $n=k+1$. 
   
   Note  
   $$A_k = \frac{a_1+\cdots+a_k}{k}, G_k = (a_1\cdots a_k)^{\frac{1}{k}}$$ 
@@ -118,6 +118,43 @@ $$
 $$
 
 where the $\leqslant$ used introduction hypothesis, that is $A_{k+1} \leqslant G_{k+1}$. 
+\end{proof}
+
+Note: Since the average of rational numbers can be averaged as uniform weighted average, the average of irrational number weights can be approximated by the sequence of rational number weights, and the inequality relationship $\geqslant$ and $\leqslant$ remains unchanged during the limit. Therefore, an inequality that is related to the average value is established for any weight if it is established for the weighted average. In other words, if it is established by \eqref{th1}, the following formula can also be established:
+
+\begin{equation}
+\sum q_i a_i \triangleq A \geqslant G \triangleq a_1^{q_1} \cdots a_n^{q_n} \tag{$1^{\prime}$}
+\end{equation}
+where $q_i > 0$ \& $\sum q_i = 1$. 
+
+
+\section{Bernoulli inequality}
+
+\begin{Th} \label{th2} 
+
+  \textnormal{For} $x \in (-1, \infty)$: 
+
+  \begin{equation}
+    (1+x)^{\alpha}  \begin{array}{c}
+      \leqslant \\ 
+      = \\ 
+      \geqslant  
+    \end{array}
+    (1+\alpha x), \textnormal{when}~\alpha 
+    \begin{array}{l}
+    \in (0,1) \\  
+    = 0, 1 \\
+    \notin(0, 1)     
+    \end{array}
+  \end{equation}
+  
+  \end{Th}
+  
+\begin{proof} The Talyor expantion (second order) of function $f(x) = (1+x)^{\alpha}$ at $x_0 = 0$ with Lagrange remainder: 
+  \begin{equation}\label{eq:star}
+(1+x)^{\alpha} = (1+0)^{\alpha} + \frac{\alpha(1+0)^{\alpha-1}}{r!}\cdot x + \frac{\alpha(\alpha-1)\cdot(1+\xi)^{\alpha-2}}{2!}\cdot x^2 \tag{*}    
+  \end{equation}  
+  where $x>-1$, but $\xi$ is between 0 and $x$, so there is always $1+\xi > 0$, from \eqref{eq:star} one get \eqref{th2} immediately.  
 \end{proof}
 
 \begin{thebibliography}{99} 
