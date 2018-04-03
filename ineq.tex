@@ -1,25 +1,9 @@
 \documentclass[12pt,a4paper,reqno]{amsart}
-%\usepackage{amsfonts}
-%\usepackage{amsthm}
-%\usepackage{amsmath}
-%\usepackage{amscd}
 \usepackage{amssymb}
 \usepackage{mathbbol}
 \usepackage[latin2]{inputenc}
 \usepackage{t1enc}
-%\usepackage[mathscr]{eucal}
-%\usepackage{indentfirst}
-%\usepackage{graphicx}
-%\usepackage{graphics}
-%\usepackage{pict2e}
-%\usepackage{epic}
-%\numberwithin{equation}{section}
 \usepackage[margin=2.9cm]{geometry}
-%\usepackage{epstopdf} 
-
- %\def\numset#1{{\\mathbb #1}}
-
- 
 
 \theoremstyle{plain}
 % \newtheorem{Th}{Theorem}[section]
@@ -34,7 +18,6 @@
 \newtheorem{Rem}[Th]{Remark}
 \newtheorem{?}[Th]{Problem}
 \newtheorem{Ex}[Th]{Example}
-
 
 
 \begin{document}
@@ -157,14 +140,31 @@ where $q_i > 0$ \& $\sum q_i = 1$.
   where $x>-1$, but $\xi$ is between 0 and $x$, so there is always $1+\xi > 0$, from \eqref{eq:star} one get \eqref{th2} immediately.  
 \end{proof}
 
+Note: 
+\begin{enumerate}
+
+  \item [$1^{\circ}$] Let $1+x=t > 0$. \eqref{th2} can be written as:  
+  
+  \begin{equation}
+    t^{\alpha}  \begin{array}{c}
+      \leqslant \\ 
+      = \\ 
+      \geqslant  
+    \end{array}
+    (1+\alpha x), \textnormal{when}~\alpha 
+    \begin{array}{l}
+    \in (0,1) \\  
+    = 0, 1 \\
+    \notin(0, 1)     
+    \end{array}
+    \tag{$2^{\prime}$}
+  \end{equation}
+
+\end{enumerate}
+
 \begin{thebibliography}{99} 
 
 \bibitem{shi1964} Jihuai Shi, \textit{Average}, 1964, People's education press.  
-\bibitem{wilk} David R. Wilkins: \textit{Getting started with Latex}, \begin{verbatim} http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/
-\end{verbatim}
-
-\bibitem{wiki} \begin{verbatim} http://en.wikibooks.org/wiki/LaTeX \end{verbatim}
-
 
 
 \end{thebibliography}
