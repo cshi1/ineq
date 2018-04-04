@@ -134,10 +134,10 @@ where $q_i > 0$ \& $\sum q_i = 1$.
   \end{Th}
   
 \begin{proof} The Talyor expantion (second order) of function $f(x) = (1+x)^{\alpha}$ at $x_0 = 0$ with Lagrange remainder: 
-  \begin{equation}\label{eq:star}
-(1+x)^{\alpha} = (1+0)^{\alpha} + \frac{\alpha(1+0)^{\alpha-1}}{r!}\cdot x + \frac{\alpha(\alpha-1)\cdot(1+\xi)^{\alpha-2}}{2!}\cdot x^2 \tag{*}    
+  \begin{equation}\label{eq:star2}
+(1+x)^{\alpha} = (1+0)^{\alpha} + \frac{\alpha(1+0)^{\alpha-1}}{r!}\cdot x + \frac{\alpha(\alpha-1)\cdot(1+\xi)^{\alpha-2}}{2!}\cdot x^2 \tag{*2}    
   \end{equation}  
-  where $x>-1$, but $\xi$ is between 0 and $x$, so there is always $1+\xi > 0$, from \eqref{eq:star} one get \eqref{th2} immediately.  
+  where $x>-1$, but $\xi$ is between 0 and $x$, so there is always $1+\xi > 0$, from \eqref{eq:star2} one get \eqref{th2} immediately.  
 \end{proof}
 
 Note: 
@@ -145,7 +145,7 @@ Note:
 
   \item [$1^{\circ}$] Let $1+x=t > 0$. \eqref{th2} can be written as:  
   
-  \begin{equation}
+  \begin{equation}\label{eq:2p}
     t^{\alpha}  \begin{array}{c}
       \leqslant \\ 
       = \\ 
@@ -160,7 +160,62 @@ Note:
     \tag{$2^{\prime}$}
   \end{equation}
 
+
+  \item [$2^{\circ}$] The \eqref{th2} can also be proved by elementary mathematics~\cite{shi1964}. 
+
+  \item [$3^{\circ}$] From the functional images on both sides of the inequality, we can call it an inequality with straight boundaries. Because of this, its usefulness is vast and it plays an important role in the inequality family.
+
 \end{enumerate}
+
+
+
+\section{H\"older inequality}
+
+\begin{Th} \label{th3} 
+  For any real number $r$, has: 
+ 
+  \begin{equation}
+    \sum^n_{i=1} a_i^r\cdot b_i^{1-r} 
+      \begin{array}{c}
+        \leqslant \\ 
+        \geqslant  
+      \end{array}
+    \left (\sum_{i=1}^n a_i \right)^r  
+    \left (\sum_{i=1}^n b_i \right)^{1-r}, \textnormal{when} 
+    \begin{array}{l}
+    \in (0,1) \\  
+    \notin(0, 1)     
+    \end{array}
+    (0, 1)
+  \end{equation}
+
+\end{Th}
+
+\begin{proof}
+Let $\theta_i\triangleq a_i/\sum_{j=1}^n a_j$, $\delta_i\triangleq b_i/\sum_{j=1}^n b_j$, then \eqref{th3} is equal with 
+\begin{equation}\label{eq:star3}
+  \sum^n_{i=1} \theta_i^r\cdot \delta_i^{1-r} 
+      \begin{array}{c}
+        \leqslant \\ 
+        \geqslant  
+      \end{array} 
+    1, \textnormal{when} 
+    \begin{array}{l}
+    \in (0,1) \\  
+    \notin(0, 1)     
+    \end{array}
+    (0, 1) \tag{*3}
+\end{equation}
+
+Note, the left side of \eqref{eq:star3} can be written as 
+
+$$\sum_{i=1}^n \left( \frac{\theta_i}{\delta_i} \right)^r \cdot \delta_i $$ 
+
+for which $\left( \frac{\theta_i}{\delta_i} \right)^r$ use \eqref{eq:2p} (where $\sum\delta_i = 1 = \sum\theta_i$) will get \eqref{eq:star3}. 
+\end{proof}
+
+
+
 
 \begin{thebibliography}{99} 
 
