@@ -214,6 +214,85 @@ $$\sum_{i=1}^n \left( \frac{\theta_i}{\delta_i} \right)^r \cdot \delta_i $$
 for which $\left( \frac{\theta_i}{\delta_i} \right)^r$ use \eqref{eq:2p} (where $\sum\delta_i = 1 = \sum\theta_i$) will get \eqref{eq:star3}. 
 \end{proof}
 
+Note: 
+\begin{enumerate}
+
+  \item [$1^{\circ}$] \eqref{th3} can be simply written as: 
+  \begin{equation}\label{eq:3p}
+    | \mathbb{a}^r \cdot \mathbb{b}^{1-r} | 
+    \begin{array}{c}
+      \leqslant \\ 
+      \geqslant  
+    \end{array}
+    | \mathbb{a}|^r \cdot |\mathbb{b}|^{1-r}, \textnormal{when} r
+    \begin{array}{l}
+    \in \\  
+    \notin     
+    \end{array}
+    (0, 1) \tag{$3^{\prime}$} 
+  \end{equation}
+  
+  \item [$2^{\circ}$] Compare with \eqref{eq:3p} easy get: 
+
+  \begin{equation}\label{eq:4}
+    \begin{split}
+      | \mathbb{a}^p \cdot \mathbb{b}^q | = | \mathbb{a}^{p\cdot\frac{1}{r}\cdot r} \cdot \mathbb{b}^{q\cdot\frac{1}{(1-r)}\cdot(1-r)}| 
+      \begin{array}{c}
+        \leqslant \\ 
+        \geqslant  
+      \end{array}
+      | \mathbb{a}^{p\cdot\frac{1}{r}}|^r \cdot |\mathbb{b}^{q\cdot\frac{1}{(1-r)}}|^{1-r}\triangleq \\ \triangleq  
+      |\mathbb{a}^{p\cdot k}|^{\frac{1}{k}} \cdot |\mathbb{b}^{q\cdot k^{\prime}}|^{\frac{1}{k^{\prime}}} = |\mathbb{a}^p|_k \cdot |\mathbb{b}^q|_{k^{\prime}}, \textnormal{when}~k
+      \begin{array}{l}
+        >  \\  
+        <      
+      \end{array}
+      1.
+    \end{split}
+  \end{equation}
+  where $\frac{1}{r}=k$, $\frac{1}{(1-r)}=k^{\prime}$, but $\frac{1}{k}+\frac{1}{k^{\prime}}=1$. Called $k$ and $k'$ conjugate. 
+
+Also, $r \begin{array}{c} \in \\ \notin \end{array} (0,1)$ equivalent to $k \begin{array}{c} > \\ < \end{array} 1$. 
+  
+Specifically, when $p=q=1$, \eqref{eq:4} becomes 
+
+\begin{equation}\label{eq:4p}
+  | \mathbb{a}\cdot\mathbb{b}|\begin{array}{c}
+  \leqslant \\ 
+  \geqslant    
+  \end{array}
+  |\mathbb{a}|_k \cdot | \mathbb{b}|_{k'}, \textnormal{when}~k
+  \begin{array}{l}
+    >  \\  
+    <      
+  \end{array}
+  1.  \tag{$4'$} 
+\end{equation}
+Also, when $p=1$, $q=r-1$, take $k=r$, get $(k'=\frac{r}{r-1})$ 
+
+\begin{equation}\label{eq:4pp}
+  | \mathbb{a}\cdot\mathbb{b}^{r-1}|\begin{array}{c}
+  \leqslant \\ 
+  \geqslant    
+  \end{array}
+  |\mathbb{a}|_r \cdot | \mathbb{b}|_r^{r-1}, \textnormal{when}~r
+  \begin{array}{l}
+    >  \\  
+    <      
+  \end{array}
+  1.  \tag{$4''$} 
+\end{equation}
+
+\item [$3^{\circ}$] \eqref{eq:4p} is common form of bidirectional H\"older inequality. For simplicity, we call \eqref{th3}, \eqref{eq:4}, \eqref{eq:4pp} as (binary) first, second, and $r^{th}$ bidirectional H\"older inequality.  
+
+\item [$4^{\circ}$] The first part of \eqref{th3} can be proved by $A\geqslant G$, also $A\geqslant G$ can proof multivariate one-way H\"older inequality:
+\begin{equation}\label{eq:4}
+  \sum_{i=1}^n a_i^{\alpha}\cdot b_i^{\beta}\cdot \cdots \cdot l_i^{\lambda} \leqslant\left(\sum a_i\right)^{\alpha} \cdot \left(\sum b_i\right)^{\beta}\cdot \cdots \cdot \left(\sum l_i\right)^{\lambda}
+\end{equation}
+where $\alpha, \beta, \cdots, \lambda$ are all positive and $\alpha + \beta + \cdots + \lambda = 1$. 
+
+\end{enumerate}
+
 
 
 
