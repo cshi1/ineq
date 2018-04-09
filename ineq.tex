@@ -286,7 +286,7 @@ Also, when $p=1$, $q=r-1$, take $k=r$, get $(k'=\frac{r}{r-1})$
 \item [$3^{\circ}$] \eqref{eq:4p} is common form of bidirectional H\"older inequality. For simplicity, we call \eqref{th3}, \eqref{eq:4}, \eqref{eq:4pp} as (binary) first, second, and $r^{th}$ bidirectional H\"older inequality.  
 
 \item [$4^{\circ}$] The first part of \eqref{th3} can be proved by $A\geqslant G$, also $A\geqslant G$ can proof multivariate one-way H\"older inequality:
-\begin{equation}\label{eq:4}
+\begin{equation}\label{eq:5}
   \sum_{i=1}^n a_i^{\alpha}\cdot b_i^{\beta}\cdot \cdots \cdot l_i^{\lambda} \leqslant\left(\sum a_i\right)^{\alpha} \cdot \left(\sum b_i\right)^{\beta}\cdot \cdots \cdot \left(\sum l_i\right)^{\lambda}
 \end{equation}
 where $\alpha, \beta, \cdots, \lambda$ are all positive and $\alpha + \beta + \cdots + \lambda = 1$. 
@@ -301,10 +301,29 @@ where $\alpha, \beta, \cdots, \lambda$ are all positive and $\alpha + \beta + \c
   $$ B \triangleq \min \left\{ [ |\mathbb{a}|_k\cdot |\mathbb{b}|_{k'}: k > 1 ]\cup[|\mathbb{a}|_{k'}\cdot |\mathbb{b}|_k]: k>1]\cup[|\mathbb{a}|\cdot \max b_i, |\mathbb{b}|\max a_i]\right\}$$ 
   then because of \eqref{eq:4p} has $A\leqslant |\mathbb{a b}| \leqslant B$. 
 
+  \item [$6^{\circ}$] H\"older inequality defines the sum of products (in particular, the product sum of many pairs of numbers). This kind of ubiquity in mathematics (such as definite integral) determines its unique position in the family of inequalities.
+
 \end{enumerate}
 
 
+\section{Modulo mean power function}
 
+In order to use analytical methods to deal with some of the problems in modular and exponential averaging, introduce the function of $r$ (non-zero real number): 
+
+$$\Phi(r;\mathbb{a}, \mathbb{c}) = \left( \sum_{i=1}^n c_i a_i^r \right)^{\frac{1}{r}} = |\mathbb{c}\cdot \mathbb{a}^r|^{\frac{1}{r}}$$ 
+
+where $a_i$, $c_i$ are all positive numbers. Because when $c_i \equiv 1$ which is the $r$-module of $|\mathbb{a}|_r$; while when $c_i >0 \& \sum_{i=1}^n c_i = 1$, which is the $r$-order power average. The $M(r; \mathbb{a},\mathbb{c})$ is called modulus mean power function. Regarding the situation that it changes due to the increment of $r$, we have
+
+\begin{Th} \label{th4}
+  \textnormal{When} $r \nearrow$ \textnormal{then}
+  \begin{equation} 
+    \Phi(r;\mathbb{a},\mathbb{c}) \left\{ \begin{array}{cl}
+    \searrow & \textnormal{when}~ c_i \geqslant 1~ \textnormal{especially}~c_i=1~(i=1,\cdots,n);  \\
+    \nearrow & \textnormal{when}~ \sum_i^n c_i \leqslant 1~ \textnormal{especially}\sum c_i=1.      
+    \end{array} \right.
+  \end{equation}  
+  
+\end{Th}
 
 \begin{thebibliography}{99} 
 
