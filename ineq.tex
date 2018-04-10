@@ -325,6 +325,28 @@ where $a_i$, $c_i$ are all positive numbers. Because when $c_i \equiv 1$ which i
   
 \end{Th}
 
+\begin{proof}
+  From $$\Phi=e^{\ln\Phi}=e^{\frac{1}{r}\ln\sum c_i a_i^r} \triangleq e^{\phi(r)}$$ knows $\Phi_r'$ has the same sign with $\phi_r'$. However
+\begin{equation*}
+\begin{split}
+  \phi' & = \frac{-1}{r^2}\ln\sum_i c_i a_i^r + \frac{1}{r}\cdot\frac{\sum_i c_i a_i^r\ln a_i}{\sum_j c_j a_j^r} \\
+        & = \frac{1}{r^2} \left[\sum_i  \left(\frac{c_i a_i^r}{\sum_j c_j a_j^r}\right)\cdot \ln a_i^r-\ln\sum_i c_i a_i^r \right] \\ 
+        & = \frac{1}{r^2} \left[\ln \prod_{i=1}^n \left(a_i^r\right)^{\theta_i} - \ln\sum_i c_i a_i^r \right] \\
+        & = \frac{1}{r^2} \ln\prod_{i=1}^n \left(\frac{\theta_i}{c_i}\right)^{\theta_i}, 
+\end{split}
+\end{equation*}
+where $\theta_i\triangleq c_i a_i^r / \sum\limits_{j=1}^n c_j a_j^r, \sum\limits_i^n \theta_i = 1$. Whether $\phi'(r)$ is positive or negative depends on whether $\prod\limits_{i=1}^n\left(\frac{\theta_i}{c_i} \right)^{\theta_i}$ is greater than 1 or not. 
+
+Obviously, 
+
+\begin{enumerate}
+
+  \item [$1^{\circ}$] when $c_i\geqslant 1 (i=1,\cdots , n)$, $\prod\limits_{i=1}^n (\theta_i/c_i)^{\theta_i}<1$. So $\phi'(r)$ and $\Phi'(r)$ are all less than 0, thus $\Phi(r) \searrow$. Especially when $c_i\equiv1$ as Jensen inequality called. 
+
+\end{enumerate}
+
+\end{proof}
+
 \begin{thebibliography}{99} 
 
 \bibitem{shi1964} Jihuai Shi, \textit{Average}, 1964, People's education press.  
